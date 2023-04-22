@@ -44,8 +44,8 @@ function authorize(token) {
 
 function responseTransformation(response) {
   return response.ok
-            ? response.json()
-            : Promise.reject(`${response.status} ${response.statusText}`);
+    ? response.json()
+    : Promise.reject(`${response.status} ${response.statusText}`);
 }
 
 export { register, login, authorize };
